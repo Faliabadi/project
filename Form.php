@@ -4,6 +4,15 @@ $db_user = "root"; //database username
 $db_pass = ""; //database Password 
 $db_name = "userdb01"; //insert your batabase name 
 $tbl_name = "ارتباط با ما"; //insert your table name 
+
+<body dir="rtl">
+<font size="35" color="blue" face="b nazanin">
+<center>
+<b> بسم الله الرحمن الرحیم </b> <br>
+<font class="item"> فاطمه علی آبادی </font> <br>
+</center>
+ </font>
+
 $user = $_POST['userName']; 
 $pass = $_POST['passWord']; 
 $email = $_POST['eMail']; 
@@ -17,7 +26,7 @@ if(!$email) {
 	die('ادرس ایمیل معتبر نیست');
 } 
 if(!preg_match('/[a-zA-z0-9._-]+@[a-zA-z0-9\.-]+\.[a-zA-z\.]+/', $email)) {
-	die('آدرس ایمیل معتبر نمی باشد'); 
+	die('آدرس ایمیل معتبر نیست'); 
 } 
 $conn = mysql_connect($server, $db_user, $db_pass);
 if(!$conn) { 
